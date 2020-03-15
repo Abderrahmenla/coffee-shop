@@ -3,9 +3,10 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Abderrahmen Lahmedi <abderrahmen.lahmedigl@gmail.com>",
   "dependencies": {
     "gatsby": "^2.19.7",
+    "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
