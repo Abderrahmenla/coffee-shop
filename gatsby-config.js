@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,7 +37,7 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/about/`, `/`],
-        },
+      },
     },
     {
       resolve: `gatsby-source-contentful`,
@@ -44,15 +45,15 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      }
+      },
     },
     {
-			resolve: 'gatsby-plugin-snipcart',
-			options: {
-				apiKey: process.env.SNIPCART,
-        autopop : true
-			}
-		}
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey: process.env.SNIPCART,
+        autopop: true,
+      },
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
