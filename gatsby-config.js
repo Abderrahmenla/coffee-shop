@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-sass`,
