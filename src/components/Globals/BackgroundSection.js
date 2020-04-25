@@ -1,22 +1,26 @@
-import React from 'react'
+import React from "react"
 import BackgroundImage from "gatsby-background-image"
-export default function BackgroundSection ({
+export default function BackgroundSection({
   img,
   styleClass,
   title,
-  children
+  children,
 }) {
+  const backgroundFluidImageStack = [
+    img,
+    `linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5))`,
+  ].reverse()
   return (
-    <BackgroundImage className={styleClass} fluid={img}>
-    <h1 className="title text-white text-uppercase text-center display-4 font-weight-bold">
-    {title}
-    </h1>
-    {children}
+    <BackgroundImage className={styleClass} fluid={backgroundFluidImageStack}>
+      <h1 className="title text-white text-uppercase text-center display-4 font-weight-bold">
+        {title}
+      </h1>
+      {children}
     </BackgroundImage>
   )
 }
 
 BackgroundSection.defaultProps = {
-  title:"default title",
-  styleClass:"default-background"
+  title: "default title",
+  styleClass: "default-background",
 }
