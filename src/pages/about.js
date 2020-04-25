@@ -8,7 +8,11 @@ import Info from "../components/Home/info"
 const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="About" />
-    <BackgroundSection title="about us" styleClass="about-background" />
+    <BackgroundSection
+      img={data.img.childImageSharp.fluid}
+      title="about us"
+      styleClass="about-background"
+    />
     <Info />
   </Layout>
 )

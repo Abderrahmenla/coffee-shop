@@ -24,7 +24,7 @@ export default function Info() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <AniLink fade to="/about/">
+            <AniLink fade to="/about">
               <button className="btn text-uppercase btn-yellow">
                 about page
               </button>
